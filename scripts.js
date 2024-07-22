@@ -1,13 +1,13 @@
 
 
-const inputResult = document.querySelector(".input-result")
+const resultP = document.querySelector(".result-p")
 
 const buttonSorteio = document.querySelector(".button-sorteio")
 
 
 function gerenateNumber() {
 
-   const inputResult = document.querySelector(".input-result").value
+   const resultP = document.querySelector(".result-p")
 
    const min = Math.ceil(document.querySelector(".input-min").value)
 
@@ -15,13 +15,8 @@ function gerenateNumber() {
 
    const result = Math.floor(Math.random() * (max - min + 1)) + min;
 
-   inputResult.innerHTML = result
+   resultP.innerHTML = result
 
-   inputResult.value = result
-
-   console.log(result)
-   
-   alert(result)
 }
 
 buttonSorteio.addEventListener("click", gerenateNumber)
