@@ -15,6 +15,12 @@ function gerenateNumber() {
 
    const result = Math.floor(Math.random() * (max - min + 1)) + min;
 
+   if (min >= max) {
+      alert ("O valor mínimo não de deve ser maior que o valor máximo")
+   }
+else {
+   const result = Math.floor(Math.random() * (max - min + 1)) + min;
+}
    resultP.innerHTML = result
 
 }
